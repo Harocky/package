@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Baloo_Thambi";
+  src: url("/fonts/BalooThambi.ttf") format("truetype");
+  font-display: swap;
+}
+
+html {
+  font-family: "Baloo_Thambi", sans-serif;
+}
+
+body {
+  background: var(--ev-bg);
+  color: var(--ev-text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}

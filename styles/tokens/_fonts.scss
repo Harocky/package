@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Baloo_Thambi";
+
+  src: url("/fonts/BalooThambi.ttf") format("truetype");
+
+  font-display: swap;
+}
+
+html {
+  font-family: "Baloo_Thambi", sans-serif;
+}

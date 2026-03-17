@@ -1,0 +1,44 @@
+:root {
+  --ev-white: #ffffff;
+  --ev-black: #000000;
+
+  --ev-gray-50: #fafafa;
+  --ev-gray-100: #f4f4f5;
+  --ev-gray-200: #e4e4e7;
+  --ev-gray-300: #d4d4d8;
+  --ev-gray-400: #a1a1aa;
+  --ev-gray-500: #71717a;
+  --ev-gray-600: #52525b;
+  --ev-gray-700: #3f3f46;
+  --ev-gray-800: #27272a;
+  --ev-gray-900: #18181b;
+
+  --ev-primary-100: #f4effa;
+  --ev-primary-300: #bba7d6;
+  --ev-primary-500: #73599d;
+  --ev-primary-700: #5d5767;
+  --ev-primary-900: #3f3455;
+
+  --ev-error: #eb5757;
+  --ev-success: #27ae60;
+  --ev-warning: #f2c94c;
+
+  /* Default Light Theme */
+  --ev-bg: var(--ev-white);
+  --ev-bg-soft: var(--ev-gray-50);
+  --ev-text: var(--ev-gray-900);
+  --ev-text-soft: var(--ev-gray-600);
+  --ev-border: var(--ev-gray-200);
+  --ev-primary: var(--ev-primary-500);
+  --ev-primary-hover: var(--ev-primary-700);
+}
+
+body.ev-dark {
+  --ev-bg: var(--ev-gray-900);
+  --ev-bg-soft: var(--ev-gray-800);
+  --ev-text: var(--ev-gray-100);
+  --ev-text-soft: var(--ev-gray-400);
+  --ev-border: var(--ev-gray-700);
+  --ev-primary: var(--ev-primary-300);
+  --ev-primary-hover: var(--ev-primary-500);
+}

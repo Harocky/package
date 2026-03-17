@@ -1,0 +1,19 @@
+@use "tailwindcss";
+
+/* tokens */
+@use "./tokens/colors";
+@use "./tokens/sizes";
+@use "./tokens/animation";
+
+/* base */
+@use "./base/reset";
+@use "./base/theme";
+
+/* utilities */
+@use "./utilities/spacing";
+@use "./utilities/radius";
+@use "./utilities/common";
+
+/* components */
+@use "./components/components";
+@use "./components/accordion";

@@ -1,0 +1,66 @@
+/* ========================
+   FLEXBOX
+======================== */
+.ev-flex {
+  display: flex;
+}
+.ev-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.ev-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.ev-flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* Alignment */
+.ev-items-center {
+  align-items: center;
+}
+.ev-items-start {
+  align-items: flex-start;
+}
+.ev-items-end {
+  align-items: flex-end;
+}
+
+.ev-justify-center {
+  justify-content: center;
+}
+.ev-justify-between {
+  justify-content: space-between;
+}
+.ev-justify-start {
+  justify-content: flex-start;
+}
+.ev-justify-end {
+  justify-content: flex-end;
+}
+
+/* ========================
+   BACKGROUNDS
+======================== */
+.ev-bg-main {
+  background-color: var(--ev-bg);
+}
+.ev-bg-alt {
+  background-color: var(--ev-bg-alt);
+}
+.ev-bg-primary {
+  background-color: var(--ev-primary);
+  color: #fff;
+}
+
+/* ========================
+   ANIMATIONS & EFFECTS
+======================== */
+.ev-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.ev-cursor-pointer {
+  cursor: pointer;
+}

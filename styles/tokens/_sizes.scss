@@ -1,0 +1,46 @@
+:root {
+  /* =======================================
+     SPACING (Padding, Margin, Gap)
+     Normal on laptop (~16px), huge on 4K (~40px+)
+  ======================================= */
+  --ev-space-xxs: clamp(2px, 0.15vw + 1px, 10px);
+  --ev-space-xs: clamp(4px, 0.3vw + 1px, 16px);
+  --ev-space-sm: clamp(8px, 0.6vw + 2px, 32px);
+  --ev-space-md: clamp(12px, 1vw + 2px, 48px); /* Laptop: ~16px | 4K: ~40px */
+  --ev-space-lg: clamp(16px, 1.5vw + 4px, 72px); /* Laptop: ~25px | 4K: ~61px */
+  --ev-space-xl: clamp(
+    24px,
+    2.5vw + 6px,
+    120px
+  ); /* Laptop: ~42px | 4K: ~102px */
+
+  /* =======================================
+     TYPOGRAPHY (Fluid Text)
+     Normal readability on laptops, cinematic on 4K
+  ======================================= */
+  --ev-text-sm: clamp(12px, 0.6vw + 4px, 28px); /* Laptop: ~13px | 4K: ~27px */
+  --ev-text-md: clamp(14px, 0.8vw + 4px, 36px); /* Laptop: ~15px | 4K: ~35px */
+  --ev-text-lg: clamp(16px, 1.2vw + 4px, 52px); /* Laptop: ~21px | 4K: ~50px */
+  --ev-text-xl: clamp(20px, 1.8vw + 6px, 76px); /* Laptop: ~32px | 4K: ~75px */
+  --ev-text-2xl: clamp(
+    28px,
+    2.5vw + 8px,
+    104px
+  ); /* Laptop: ~44px | 4K: ~104px */
+
+  /* =======================================
+     ICONS
+  ======================================= */
+  --ev-icon-sm: clamp(16px, 0.8vw + 6px, 40px);
+  --ev-icon-md: clamp(20px, 1.2vw + 8px, 56px);
+  --ev-icon-lg: clamp(32px, 2vw + 12px, 96px);
+
+  /* =======================================
+     BORDER RADIUS
+     Stays crisp on laptops, gets rounder on huge screens
+  ======================================= */
+  --ev-radius-sm: clamp(4px, 0.3vw + 2px, 12px);
+  --ev-radius-md: clamp(6px, 0.5vw + 2px, 20px);
+  --ev-radius-lg: clamp(12px, 0.8vw + 4px, 36px);
+  --ev-radius-full: 9999px;
+}

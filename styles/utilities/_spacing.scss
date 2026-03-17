@@ -1,0 +1,89 @@
+/* Padding */
+.ev-pad-xs {
+  padding: var(--ev-space-xs);
+}
+.ev-pad-y-xs {
+  padding-top: var(--ev-space-xs);
+  padding-bottom: var(--ev-space-xs);
+}
+.ev-pad-sm {
+  padding: var(--ev-space-sm);
+}
+.ev-pad-md {
+  padding: var(--ev-space-md);
+}
+.ev-pad-lg {
+  padding: var(--ev-space-lg);
+}
+.ev-pad-x-md {
+  padding-left: var(--ev-space-md);
+  padding-right: var(--ev-space-md);
+}
+.ev-pad-y-sm {
+  padding-top: var(--ev-space-sm);
+  padding-bottom: var(--ev-space-sm);
+}
+
+/* Margin */
+.ev-mar-xs {
+  margin: var(--ev-space-xs);
+}
+.ev-mar-sm {
+  margin: var(--ev-space-sm);
+}
+.ev-mar-md {
+  margin: var(--ev-space-md);
+}
+.ev-mar-y-sm {
+  margin-top: var(--ev-space-sm);
+  margin-bottom: var(--ev-space-sm);
+}
+.ev-mar-y-md {
+  margin-top: var(--ev-space-md);
+  margin-bottom: var(--ev-space-md);
+}
+
+/* Gap */
+.ev-gap-xs {
+  gap: var(--ev-space-xs);
+}
+.ev-gap-sm {
+  gap: var(--ev-space-sm);
+}
+.ev-gap-md {
+  gap: var(--ev-space-md);
+}
+.ev-gap-lg {
+  gap: var(--ev-space-lg);
+}
+
+/* Radius (Fixed missing prefixes from your file) */
+.ev-rounded-sm {
+  border-radius: var(--ev-radius-sm);
+}
+.ev-rounded-md {
+  border-radius: var(--ev-radius-md);
+}
+.ev-rounded-lg {
+  border-radius: var(--ev-radius-lg);
+}
+.ev-rounded-full {
+  border-radius: var(--ev-radius-full);
+}
+
+/* Typography (Fixed missing prefixes from your file) */
+.ev-text-sm {
+  font-size: var(--ev-text-sm);
+}
+.ev-text-md {
+  font-size: var(--ev-text-md);
+}
+.ev-text-lg {
+  font-size: var(--ev-text-lg);
+}
+.ev-text-xl {
+  font-size: var(--ev-text-xl);
+}
+.ev-text-2xl {
+  font-size: var(--ev-text-2xl);
+}
