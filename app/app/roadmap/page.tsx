@@ -29,11 +29,11 @@ export default function RoadmapPage() {
       desc: "We provide regular on-site health checks, software updates, and fix issues proactively.",
       icon: <span className="ev-text-2xl">🛠️</span>,
     },
-    // {
-    //   title: "24/7 Customer support",
-    //   desc: "Our support team is available 24/7 to assist with technical queries or user concerns.",
-    //   icon: <span className="ev-text-2xl">🎧</span>,
-    // },
+    {
+      title: "24/7 Customer support",
+      desc: "Our support team is available 24/7 to assist with technical queries or user concerns.",
+      icon: <span className="ev-text-2xl">🎧</span>,
+    },
   ];
 
   return (

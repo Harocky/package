@@ -39,7 +39,7 @@ export default function EvDropdown({
     <div className="relative flex flex-col ev-gap-xs flex-1">
       <button
         type="button"
-        className={`w-full flex items-center justify-between bg-gray-50 border rounded-xl shadow-sm outline-none transition-all duration-200 ev-pad-x-md ev-pad-y-sm text-[15px] font-medium ${
+        className={`w-full flex items-center justify-between bg-gray-50 border rounded-xl shadow-sm outline-none transition-all duration-200 ev-pad-x-md ev-pad-y-sm text-[15px] font-medium cursor-pointer ${
           error
             ? "border-red-500 bg-red-50 text-red-700"
             : "border-gray-200 text-gray-700 hover:border-gray-300 hover:bg-gray-100/50 focus:ring-2 focus:ring-blue-500/30 focus:border-blue-500"

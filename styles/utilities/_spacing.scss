@@ -1,10 +1,6 @@
-/* Padding */
+/* Padding - Base */
 .ev-pad-xs {
   padding: var(--ev-space-xs);
-}
-.ev-pad-y-xs {
-  padding-top: var(--ev-space-xs);
-  padding-bottom: var(--ev-space-xs);
 }
 .ev-pad-sm {
   padding: var(--ev-space-sm);
@@ -15,16 +11,78 @@
 .ev-pad-lg {
   padding: var(--ev-space-lg);
 }
+.ev-pad-xl {
+  padding: var(--ev-space-xl);
+}
+
+/* Padding - Axis */
+.ev-pad-x-xs {
+  padding-left: var(--ev-space-xs);
+  padding-right: var(--ev-space-xs);
+}
+.ev-pad-x-sm {
+  padding-left: var(--ev-space-sm);
+  padding-right: var(--ev-space-sm);
+}
 .ev-pad-x-md {
   padding-left: var(--ev-space-md);
   padding-right: var(--ev-space-md);
+}
+.ev-pad-x-lg {
+  padding-left: var(--ev-space-lg);
+  padding-right: var(--ev-space-lg);
+}
+
+.ev-pad-y-xs {
+  padding-top: var(--ev-space-xs);
+  padding-bottom: var(--ev-space-xs);
 }
 .ev-pad-y-sm {
   padding-top: var(--ev-space-sm);
   padding-bottom: var(--ev-space-sm);
 }
+.ev-pad-y-md {
+  padding-top: var(--ev-space-md);
+  padding-bottom: var(--ev-space-md);
+}
+.ev-pad-y-lg {
+  padding-top: var(--ev-space-lg);
+  padding-bottom: var(--ev-space-lg);
+}
 
-/* Margin */
+/* Padding - Directional */
+.ev-pad-t-xs {
+  padding-top: var(--ev-space-xs);
+}
+.ev-pad-t-sm {
+  padding-top: var(--ev-space-sm);
+}
+.ev-pad-t-md {
+  padding-top: var(--ev-space-md);
+}
+.ev-pad-t-lg {
+  padding-top: var(--ev-space-lg);
+}
+.ev-pad-b-xs {
+  padding-bottom: var(--ev-space-xs);
+}
+.ev-pad-b-sm {
+  padding-bottom: var(--ev-space-sm);
+}
+.ev-pad-b-md {
+  padding-bottom: var(--ev-space-md);
+}
+.ev-pad-b-lg {
+  padding-bottom: var(--ev-space-lg);
+}
+.ev-pad-l-md {
+  padding-left: var(--ev-space-md);
+}
+.ev-pad-r-md {
+  padding-right: var(--ev-space-md);
+}
+
+/* Margin - Base */
 .ev-mar-xs {
   margin: var(--ev-space-xs);
 }
@@ -34,6 +92,34 @@
 .ev-mar-md {
   margin: var(--ev-space-md);
 }
+.ev-mar-lg {
+  margin: var(--ev-space-lg);
+}
+.ev-mar-xl {
+  margin: var(--ev-space-xl);
+}
+.ev-mar-auto {
+  margin: auto;
+}
+
+/* Margin - Axis */
+.ev-mar-x-xs {
+  margin-left: var(--ev-space-xs);
+  margin-right: var(--ev-space-xs);
+}
+.ev-mar-x-sm {
+  margin-left: var(--ev-space-sm);
+  margin-right: var(--ev-space-sm);
+}
+.ev-mar-x-md {
+  margin-left: var(--ev-space-md);
+  margin-right: var(--ev-space-md);
+}
+.ev-mar-x-lg {
+  margin-left: var(--ev-space-lg);
+  margin-right: var(--ev-space-lg);
+}
+
 .ev-mar-y-sm {
   margin-top: var(--ev-space-sm);
   margin-bottom: var(--ev-space-sm);
@@ -41,6 +127,32 @@
 .ev-mar-y-md {
   margin-top: var(--ev-space-md);
   margin-bottom: var(--ev-space-md);
+}
+
+/* Margin - Directional */
+.ev-mar-t-xs {
+  margin-top: var(--ev-space-xs);
+}
+.ev-mar-t-sm {
+  margin-top: var(--ev-space-sm);
+}
+.ev-mar-t-md {
+  margin-top: var(--ev-space-md);
+}
+.ev-mar-t-lg {
+  margin-top: var(--ev-space-lg);
+}
+.ev-mar-b-xs {
+  margin-bottom: var(--ev-space-xs);
+}
+.ev-mar-b-sm {
+  margin-bottom: var(--ev-space-sm);
+}
+.ev-mar-b-md {
+  margin-bottom: var(--ev-space-md);
+}
+.ev-mar-b-lg {
+  margin-bottom: var(--ev-space-lg);
 }
 
 /* Gap */
@@ -56,34 +168,6 @@
 .ev-gap-lg {
   gap: var(--ev-space-lg);
 }
-
-/* Radius (Fixed missing prefixes from your file) */
-.ev-rounded-sm {
-  border-radius: var(--ev-radius-sm);
-}
-.ev-rounded-md {
-  border-radius: var(--ev-radius-md);
-}
-.ev-rounded-lg {
-  border-radius: var(--ev-radius-lg);
-}
-.ev-rounded-full {
-  border-radius: var(--ev-radius-full);
-}
-
-/* Typography (Fixed missing prefixes from your file) */
-.ev-text-sm {
-  font-size: var(--ev-text-sm);
-}
-.ev-text-md {
-  font-size: var(--ev-text-md);
-}
-.ev-text-lg {
-  font-size: var(--ev-text-lg);
-}
-.ev-text-xl {
-  font-size: var(--ev-text-xl);
-}
-.ev-text-2xl {
-  font-size: var(--ev-text-2xl);
+.ev-gap-xl {
+  gap: var(--ev-space-xl);
 }
