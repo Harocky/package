@@ -1,11 +1,9 @@
 @font-face {
-  font-family: "Baloo_Thambi";
-
-  src: url("/fonts/BalooThambi.ttf") format("truetype");
-
+  font-family: "Orbitron";
+  src: url("/fonts/Orbitron-Regular.woff2") format("woff2");
   font-display: swap;
 }
 
 html {
-  font-family: "Baloo_Thambi", sans-serif;
+  font-family: "Orbitron", sans-serif;
 }

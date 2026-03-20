@@ -13,6 +13,11 @@
     2.5vw + 6px,
     120px
   ); /* Laptop: ~42px | 4K: ~102px */
+  --ev-space-2xl: clamp(
+    30px,
+    3vw + 6px,
+    200px
+  ); /* Laptop: ~42px | 4K: ~102px */
 
   /* =======================================
      TYPOGRAPHY (Fluid Text)

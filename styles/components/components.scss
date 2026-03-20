@@ -610,6 +610,7 @@
   top: calc(100% + var(--ev-space-xs));
   z-index: 50;
   min-width: clamp(200px, 10vw + 50px, 300px);
+  max-height: 80vh;
   background: var(--ev-bg);
   border: 1px solid var(--ev-border);
   border-radius: var(--ev-radius-lg);
@@ -618,6 +619,7 @@
   flex-direction: column;
   padding: var(--ev-space-xs);
   animation: ev-popover-animate 0.2s ease-out;
+  overflow-y: auto;
 }
 
 .ev-profile-header {

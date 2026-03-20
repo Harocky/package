@@ -5,16 +5,24 @@ import EvSidebar from "../components/ui/EvSidebar";
 import EvDynamicBreadcrumbs from "../components/ui/EvDynamicBreadcrumbs";
 
 const menu = [
-  { name: "Datepicker", icon: "📅", href: "/app/datepicker" },
-  { name: "Dropdown", icon: "⏷", href: "/app/dropdown" },
-  { name: "Confirm Popup", icon: "✅", href: "/app/popup-confirm" },
-  { name: "Large Popup", icon: "🪟", href: "/app/popup-large" },
-  { name: "Submit Button", icon: "🚀", href: "/app/submit-button" },
-  { name: "Button", icon: "🔘", href: "/app/button" },
-  { name: "Tags", icon: "🏷️", href: "/app/tags" },
-  { name: "Label Input", icon: "🏷️", href: "/app/label-input" },
+  { name: "Accordion", icon: "🗂️", href: "/app/accordion" },
+  { name: "Breadcrumbs", icon: "🧭", href: "/app/breadcrumbs" },
+  { name: "Buttons", icon: "🔘", href: "/app/button" },
+  { name: "Charts", icon: "📊", href: "/app/charts" },
   { name: "CheckBox", icon: "☑️", href: "/app/checkbox" },
-  { name: "Accordion", icon: "📂", href: "/app/accordion" },
+  { name: "Datepicker", icon: "📅", href: "/app/datepicker" },
+  { name: "Dropdown", icon: "🔽", href: "/app/dropdown" },
+  { name: "Expandable Card", icon: "📖", href: "/app/expandable-card" },
+  { name: "Feature Card", icon: "⭐", href: "/app/feature-card" },
+  { name: "Flex Card", icon: "🧩", href: "/app/flex-card" },
+  { name: "Label Input", icon: "🏷️", href: "/app/label-input" },
+  { name: "Confirm Popup", icon: "✔️", href: "/app/popup-confirm" },
+  { name: "Large Popup", icon: "🪟", href: "/app/popup-large" },
+  { name: "Roadmap", icon: "🗺️", href: "/app/roadmap" },
+  { name: "Submit Button", icon: "🚀", href: "/app/submit-button" },
+  { name: "Tags", icon: "🔖", href: "/app/tags" },
+  { name: "Testimonials", icon: "💬", href: "/app/testimonials" },
+  { name: "Toast", icon: "💬", href: "/app/toast" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {

@@ -75,6 +75,12 @@
 .ev-pad-b-lg {
   padding-bottom: var(--ev-space-lg);
 }
+.ev-pad-l-xs {
+  padding-left: var(--ev-space-xs);
+}
+.ev-pad-l-sm {
+  padding-left: var(--ev-space-sm);
+}
 .ev-pad-l-md {
   padding-left: var(--ev-space-md);
 }
@@ -141,6 +147,12 @@
 }
 .ev-mar-t-lg {
   margin-top: var(--ev-space-lg);
+}
+.ev-mar-t-xl {
+  margin-top: var(--ev-space-xl);
+}
+.ev-mar-t-2xl {
+  margin-top: var(--ev-space-2xl);
 }
 .ev-mar-b-xs {
   margin-bottom: var(--ev-space-xs);

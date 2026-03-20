@@ -1,6 +1,7 @@
 import Session from "./components/providers/provider";
 import "@/styles/main.scss";
 import EvNavbar from "./components/ui/EvNavBar";
+import { ToastProvider } from "./components/ui/EvToast";
 
 export default function RootLayout({
   children,
@@ -12,7 +13,9 @@ export default function RootLayout({
       <body className="ev-theme-light min-h-screen ev-flex ev-flex-col">
         <EvNavbar />
         <Session>
-          <main className="flex-1 w-full">{children}</main>
+          <main className="flex-1 w-full">
+            <ToastProvider>{children}</ToastProvider>
+          </main>
         </Session>
       </body>
     </html>
