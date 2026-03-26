@@ -75,7 +75,7 @@ export default function EvTestimonial({ data }: { data: Testimonial[] }) {
   };
 
   return (
-    <div className="relative w-full max-w-[90vw] overflow-hidden ev-bg-alt ev-pad-y-lg">
+    <div className="relative w-full overflow-hidden ev-bg-alt ev-pad-y-lg">
       <div
         className="ev-flex ev-gap-md w-[max-content] cursor-grab ev-pad-x-md"
         ref={trackRef}

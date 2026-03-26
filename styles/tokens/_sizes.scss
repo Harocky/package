@@ -44,8 +44,30 @@
      BORDER RADIUS
      Stays crisp on laptops, gets rounder on huge screens
   ======================================= */
+  --ev-radius-sm: clamp(2px, 0.2vw + 1px, 6px);
   --ev-radius-sm: clamp(4px, 0.3vw + 2px, 12px);
   --ev-radius-md: clamp(6px, 0.5vw + 2px, 20px);
   --ev-radius-lg: clamp(12px, 0.8vw + 4px, 36px);
+  --ev-radius-xl: clamp(15px, 1vw + 5px, 45px);
   --ev-radius-full: 9999px;
+}
+
+.ev-text-2xl {
+  font-size: var(--ev-text-2xl);
+}
+
+.ev-text-xl {
+  font-size: var(--ev-text-xl);
+}
+
+.ev-text-lg {
+  font-size: var(--ev-text-lg);
+}
+
+.ev-text-md {
+  font-size: var(--ev-text-md);
+}
+
+.ev-text-sm {
+  font-size: var(--ev-text-sm);
 }

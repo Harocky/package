@@ -51,13 +51,8 @@
 }
 
 .ev-btn-secondary {
-  background: var(--ev-bg);
   color: var(--ev-primary);
   border: 2px solid var(--ev-primary);
-
-  &:hover:not(:disabled) {
-    background: var(--ev-primary-100);
-  }
 }
 
 .ev-btn-sm {
@@ -767,6 +762,10 @@
 
   @media (max-width: 1024px) {
     padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
   }
 }
 

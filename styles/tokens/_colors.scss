@@ -13,11 +13,17 @@
   --ev-gray-800: #27272a;
   --ev-gray-900: #18181b;
 
-  --ev-primary-100: #f4effa;
-  --ev-primary-300: #bba7d6;
-  --ev-primary-500: #73599d;
-  --ev-primary-700: #5d5767;
-  --ev-primary-900: #3f3455;
+  /* ⚡ EV PRIMARY (Emerald Core) */
+  --ev-primary-50: #ecfdf5;
+  --ev-primary-100: #d1fae5;
+  --ev-primary-200: #a7f3d0;
+  --ev-primary-300: #6ee7b7;
+  --ev-primary-400: #34d399;
+  --ev-primary-500: #10b981; /* ⭐ your chosen color */
+  --ev-primary-600: #059669;
+  --ev-primary-700: #047857;
+  --ev-primary-800: #065f46;
+  --ev-primary-900: #064e3b;
 
   --ev-error: #eb5757;
   --ev-success: #27ae60;
@@ -30,15 +36,15 @@
   --ev-text-soft: var(--ev-gray-600);
   --ev-border: var(--ev-gray-200);
   --ev-primary: var(--ev-primary-500);
-  --ev-primary-hover: var(--ev-primary-700);
+  --ev-primary-hover: var(--ev-primary-600);
 }
 
 body.ev-dark {
-  --ev-bg: var(--ev-gray-900);
-  --ev-bg-soft: var(--ev-gray-800);
-  --ev-text: var(--ev-gray-100);
-  --ev-text-soft: var(--ev-gray-400);
-  --ev-border: var(--ev-gray-700);
-  --ev-primary: var(--ev-primary-300);
+  --ev-bg: #0b0f0e;
+  --ev-bg-soft: #121716;
+  --ev-text: #e6fff8;
+  --ev-text-soft: #86efac;
+  --ev-border: #1f2a28;
+  --ev-primary: var(--ev-primary-400);
   --ev-primary-hover: var(--ev-primary-500);
 }

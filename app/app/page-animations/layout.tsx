@@ -1,6 +1,6 @@
 "use client";
 
-import ChartsTabs from "@/app/components/ui/EvChartsTabs";
+import PageAnimationTabs from "@/app/components/ui/EvAnimationsTab";
 import React from "react";
 
 export default function ChartsLayout({
@@ -10,11 +10,11 @@ export default function ChartsLayout({
 }) {
   return (
     <div className="min-h-screen ev-bg-main ev-pad-xl flex flex-col items-center ev-gap-lg">
-      <header className="w-full max-w-7xl flex flex-col items-center mb-10">
-        <ChartsTabs />
+      <header className="w-full flex flex-col items-center mb-10">
+        <PageAnimationTabs />
       </header>
 
-      <main className="w-full max-w-7xl flex justify-center animation-fade-in">
+      <main className="w-full flex justify-center animation-fade-in">
         {children}
       </main>
     </div>

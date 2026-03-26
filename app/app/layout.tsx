@@ -20,6 +20,7 @@ const menu = [
   { name: "Large Popup", icon: "🪟", href: "/app/popup-large" },
   { name: "Roadmap", icon: "🗺️", href: "/app/roadmap" },
   { name: "Submit Button", icon: "🚀", href: "/app/submit-button" },
+  { name: "Table", icon: "🔖", href: "/app/table" },
   { name: "Tags", icon: "🔖", href: "/app/tags" },
   { name: "Testimonials", icon: "💬", href: "/app/testimonials" },
   { name: "Toast", icon: "💬", href: "/app/toast" },

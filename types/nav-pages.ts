@@ -15,6 +15,7 @@ export const navPages = [
   { label: "Popup Large", href: "/app/popup-large" },
   { label: "Roadmap", href: "/app/roadmap" },
   { label: "Submit Button", href: "/app/submit-button" },
+  { label: "Table", href: "/app/table" },
   { label: "Tags", href: "/app/tags" },
   { label: "Testimonials", href: "/app/testimonials" },
   { label: "Toast", href: "/app/toast" },

@@ -1,0 +1,38 @@
+// Static contained shape
+.uniqueImageShape {
+  border-radius: 24px;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+// Reveal from bottom animation
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.8s ease-out;
+  &.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Blur to sharp animation
+.fadeSlide {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 1.5s ease-out 0.2s;
+  &.active {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+// Zoom out effect on the contained image
+.zoomImage img {
+  transform: scale(1.4);
+  transition: transform 2.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.zoomImage.active img {
+  transform: scale(1);
+}

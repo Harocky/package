@@ -4,6 +4,7 @@
 @use "./tokens/colors";
 @use "./tokens/sizes";
 @use "./tokens/animation";
+@use "./tokens/fonts";
 
 /* base */
 @use "./base/reset";
@@ -17,3 +18,9 @@
 /* components */
 @use "./components/components";
 @use "./components/accordion";
+
+/* animations */
+@use "./animation/LeftRightCircularRotatingImage.scss";
+@use "./animation/BottomCircularRotatingImage.scss";
+@use "./animation/HomePage.scss";
+@use "./animation/home.scss";

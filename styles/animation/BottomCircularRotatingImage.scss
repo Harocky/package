@@ -1,0 +1,115 @@
+@keyframes horizon-rotate-stepped {
+  0%,
+  6.33% {
+    transform: rotate(0deg);
+  }
+  8.33%,
+  14.66% {
+    transform: rotate(-30deg);
+  }
+  16.66%,
+  23% {
+    transform: rotate(-60deg);
+  }
+  25%,
+  31.33% {
+    transform: rotate(-90deg);
+  }
+  33.33%,
+  39.66% {
+    transform: rotate(-120deg);
+  }
+  41.66%,
+  48% {
+    transform: rotate(-150deg);
+  }
+  50%,
+  56.33% {
+    transform: rotate(-180deg);
+  }
+  58.33%,
+  64.66% {
+    transform: rotate(-210deg);
+  }
+  66.66%,
+  73% {
+    transform: rotate(-240deg);
+  }
+  75%,
+  81.33% {
+    transform: rotate(-270deg);
+  }
+  83.33%,
+  89.66% {
+    transform: rotate(-300deg);
+  }
+  91.66%,
+  98% {
+    transform: rotate(-330deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes horizon-counter-stepped {
+  0%,
+  6.33% {
+    transform: rotate(var(--start-angle));
+  }
+  8.33%,
+  14.66% {
+    transform: rotate(calc(var(--start-angle) + 30deg));
+  }
+  16.66%,
+  23% {
+    transform: rotate(calc(var(--start-angle) + 60deg));
+  }
+  25%,
+  31.33% {
+    transform: rotate(calc(var(--start-angle) + 90deg));
+  }
+  33.33%,
+  39.66% {
+    transform: rotate(calc(var(--start-angle) + 120deg));
+  }
+  41.66%,
+  48% {
+    transform: rotate(calc(var(--start-angle) + 150deg));
+  }
+  50%,
+  56.33% {
+    transform: rotate(calc(var(--start-angle) + 180deg));
+  }
+  58.33%,
+  64.66% {
+    transform: rotate(calc(var(--start-angle) + 210deg));
+  }
+  66.66%,
+  73% {
+    transform: rotate(calc(var(--start-angle) + 240deg));
+  }
+  75%,
+  81.33% {
+    transform: rotate(calc(var(--start-angle) + 270deg));
+  }
+  83.33%,
+  89.66% {
+    transform: rotate(calc(var(--start-angle) + 300deg));
+  }
+  91.66%,
+  98% {
+    transform: rotate(calc(var(--start-angle) + 330deg));
+  }
+  100% {
+    transform: rotate(calc(var(--start-angle) + 360deg));
+  }
+}
+
+.animate-horizon-stepped {
+  animation: horizon-rotate-stepped 24s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animate-counter-stepped {
+  animation: horizon-counter-stepped 24s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}

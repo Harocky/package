@@ -53,7 +53,7 @@ export default function EvSidebar({
         </button>
       </div>
 
-      <nav className="flex flex-col ev-gap-xs ev-pad-sm overflow-y-auto flex-1">
+      <nav className="flex flex-col ev-gap-xs ev-pad-sm overflow-y-auto flex-1 no-scrollbar">
         {menu.map((m) => {
           const isActive = pathname === m.href;
           return (
