@@ -14,9 +14,9 @@ const FEATURES_DATA = [
   {
     title: "Secure Registration",
     content:
-      "Register securely using your phone number with OTP verification and 4-digit MPIN setup.",
+      "Register securely using your phone number with OTP verification and 4-digit MPIN setup.Register securely using your phone number with OTP verification and 4-digit MPIN setup.Register securely using your phone number with OTP verification and 4-digit MPIN setup.",
     buttonText: "Sign Up Now",
-    bgColor: "bg-slate-900",
+    bgColor: "bg-[#00041a]",
     textColor: "text-white",
     image:
       "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&q=80&w=800",
@@ -24,9 +24,9 @@ const FEATURES_DATA = [
   {
     title: "Digital Wallet",
     content:
-      "Add money via online payment methods and track all charging-related deductions in real-time.",
+      "Add money via online payment methods and track all charging-related deductions in real-time.Add money via online payment methods and track all charging-related deductions in real-time.Add money via online payment methods and track all charging-related deductions in real-time.",
     buttonText: "Manage Wallet",
-    bgColor: "bg-emerald-50",
+    bgColor: "bg-white",
     textColor: "text-slate-900",
     image:
       "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?auto=format&fit=crop&q=80&w=800",
@@ -34,9 +34,9 @@ const FEATURES_DATA = [
   {
     title: "Charger Discovery",
     content:
-      "Locate nearby stations using GPS, view real-time availability, and connector types instantly.",
+      "Locate nearby stations using GPS, view real-time availability, and connector types instantly.Locate nearby stations using GPS, view real-time availability, and connector types instantly.Locate nearby stations using GPS, view real-time availability, and connector types instantly.",
     buttonText: "Find Stations",
-    bgColor: "bg-slate-800",
+    bgColor: "bg-[#00041a]",
     textColor: "text-white",
     image:
       "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800",
@@ -140,10 +140,7 @@ const UnifiedMarsEVPage = () => {
 
   return (
     <div className="ev-bg-main w-full overflow-x-hidden">
-      <div
-        className="relative ev-mar-t-lg ev-mar-x-md scroll-section"
-        style={{ height: "750px", background: "white" }}
-      >
+      <div className="relative ev-mar-lg ev-mar-x-md scroll-section bg-black min-h-[90vh] bg-white">
         <div
           className="absolute inset-0 z-0 ev-rounded-xl overflow-hidden hero-element delay-1"
           style={{
@@ -202,7 +199,7 @@ const UnifiedMarsEVPage = () => {
             className={`min-h-[80vh] ev-pad-y-lg ${feature.bgColor} flex items-center justify-center overflow-hidden scroll-section`}
           >
             <div
-              className={`container mx-auto px-8 flex flex-row lg:flex-row gap-16 items-center ${index % 2 !== 0 ? "lg:flex-row-reverse" : ""}`}
+              className={`container mx-auto px-8 flex flex-col gap-16 items-center ${index % 2 !== 0 ? "lg:flex-row-reverse" : " lg:flex-row"}`}
             >
               <div className="zoomImage delay-1">
                 <Image
@@ -210,7 +207,7 @@ const UnifiedMarsEVPage = () => {
                   alt={feature.title}
                   width={600}
                   height={600}
-                  className="w-full h-full object-cover ev-rounded-lg shadow-2xl"
+                  className="object-cover ev-rounded-lg shadow-2xl min-w-[80vw] lg:min-w-[40vw]"
                 />
               </div>
               <div

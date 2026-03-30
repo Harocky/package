@@ -119,7 +119,7 @@ export default function EvFooter() {
               Terms
             </button>
             <button
-              onClick={() => router.push("/privacy")}
+              onClick={() => router.push("/privacy-policy")}
               className="ev-cursor-pointer ev-justify-start ev-transition hover:opacity-50 text-white"
             >
               Privacy

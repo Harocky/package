@@ -386,7 +386,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </div>
 
-      <section className="section-white ev-flex ev-items-center ev-justify-center min-h-[90vh] relative ev-pad-x-md overflow-hidden">
+      <section className="section-white ev-flex ev-items-center ev-justify-center min-h-[100vh] relative ev-pad-x-md overflow-hidden">
         <div
           className="parallax-bg"
           style={{ "--speed": 1 } as CSSProperties}
@@ -432,7 +432,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-green ev-pad-y-xl ev-pad-x-md min-h-[90vh] ev-flex ev-items-center ev-justify-center">
+      <section className="section-green ev-pad-y-xl ev-pad-x-md min-h-[100vh] ev-flex ev-items-center ev-justify-center">
         <div className="max-w-7xl ev-mar-auto grid lg:grid-cols-2 ev-gap-xl ev-items-center w-full">
           <div data-animate="fade-up" className="ev-flex ev-justify-center">
             <GaugeChart metrics={METRICS} />
@@ -464,7 +464,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-white ev-pad-y-xl ev-pad-x-md min-h-[90vh] ev-flex ev-items-center ev-justify-center">
+      <section className="section-white ev-pad-y-xl ev-pad-x-md min-h-[100vh] ev-flex ev-items-center ev-justify-center">
         <div
           className="ev-bg-white ev-rounded-xl ev-pad-xl max-w-6xl ev-mar-auto ev-flex ev-flex-col md:ev-flex-row ev-gap-xl ev-border ev-shadow-md w-full"
           data-animate="fade-up"
@@ -499,7 +499,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-green ev-pad-y-xl ev-pad-x-md min-h-[90vh] ev-flex ev-items-center ev-justify-center">
+      <section className="section-green ev-pad-y-xl ev-pad-x-md min-h-[100vh] ev-flex ev-items-center ev-justify-center">
         <div
           className="max-w-7xl ev-mar-auto w-full ev-flex ev-flex-col ev-gap-xl"
           data-animate="fade-up"
@@ -511,7 +511,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-white ev-pad-y-xl min-h-[90vh] ev-flex ev-flex-col ev-justify-center ev-items-center">
+      <section className="section-white ev-pad-y-xl min-h-[100vh] ev-flex ev-flex-col ev-justify-center ev-items-center">
         <h2
           className="text-center text-6xl font-black ev-mar-b-2xl"
           data-animate="fade-up"
@@ -526,7 +526,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-green ev-pad-y-xl min-h-[90vh] ev-flex ev-flex-col ev-justify-center ev-items-center">
+      <section className="section-green ev-pad-y-xl min-h-[100vh] ev-flex ev-flex-col ev-justify-center ev-items-center">
         <div className="text-center ev-mar-b-2xl" data-animate="fade-up">
           <h2 className="text-6xl font-black">Trusted by 400k+.</h2>
         </div>
@@ -535,7 +535,7 @@ const UnifiedMarsEVPage: React.FC = () => {
         </div>
       </section>
 
-      <section className="section-white ev-pad-y-xl ev-pad-x-md min-h-[90vh] ev-flex ev-items-center ev-justify-center">
+      <section className="section-white ev-pad-y-xl ev-pad-x-md min-h-[100vh] ev-flex ev-items-center ev-justify-center">
         <div
           className="ev-flex ev-flex-col ev-gap-lg ev-pad-lg ev-bg-white ev-rounded-xl ev-shadow-popover ev-mar-auto max-w-xl ev-border w-full"
           data-animate="fade-up"

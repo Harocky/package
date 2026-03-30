@@ -37,14 +37,3 @@
   --ev-primary: var(--ev-primary-500);
   --ev-primary-hover: var(--ev-primary-600);
 }
-
-body.ev-dark {
-  --ev-bg: #0b0f0e;
-  --ev-bg-soft: #121716;
-  --ev-text: #e6fff8;
-  --ev-text-soft: #86efac;
-  --ev-border: #1f2a28;
-  --ev-primary: var(--ev-primary-400);
-  --ev-secondary: var(--ev-primary-400);
-  --ev-primary-hover: var(--ev-primary-500);
-}
