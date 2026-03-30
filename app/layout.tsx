@@ -2,6 +2,7 @@ import Session from "./components/providers/provider";
 import "@/styles/main.scss";
 import EvNavbar from "./components/ui/EvNavBar";
 import { ToastProvider } from "./components/ui/EvToast";
+import EvFooter from "./components/ui/EvFooter";
 
 export default function RootLayout({
   children,
@@ -17,6 +18,7 @@ export default function RootLayout({
             <ToastProvider>{children}</ToastProvider>
           </main>
         </Session>
+        <EvFooter />
       </body>
     </html>
   );

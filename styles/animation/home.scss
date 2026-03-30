@@ -1,38 +1,75 @@
-// Static contained shape
-.uniqueImageShape {
-  border-radius: 24px;
-  position: relative;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$anim-speed: 0.8s; // Faster transition once triggered
+$popover-speed: 0.25s;
+
+.ev-bg-main {
+  background-color: #f8fafc;
 }
 
-// Reveal from bottom animation
+[data-animate="fade-up"],
+.fadeSlide,
+.reveal,
+.zoomImage,
+.hero-element {
+  opacity: 0;
+  pointer-events: none;
+  backface-visibility: hidden;
+  transition:
+    opacity $anim-speed $ease-out-expo,
+    transform $anim-speed $ease-out-expo;
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(0, 0) scale(1) !important;
+  }
+}
+
+.hero-element {
+  transform: translateY(30px);
+}
+
 .reveal {
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease-out;
-  &.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  transform: translateX(-30px);
 }
 
-// Blur to sharp animation
 .fadeSlide {
-  opacity: 0;
-  filter: blur(10px);
-  transition: all 1.5s ease-out 0.2s;
-  &.active {
-    opacity: 1;
-    filter: blur(0);
+  transform: translateY(20px);
+}
+
+.zoomImage {
+  transform: scale(0.95);
+}
+
+@for $i from 1 through 10 {
+  .delay-#{$i} {
+    transition-delay: #{$i * 0.25}s;
   }
 }
 
-// Zoom out effect on the contained image
-.zoomImage img {
-  transform: scale(1.4);
-  transition: transform 2.5s cubic-bezier(0.16, 1, 0.3, 1);
+.ev-popover-animate {
+  animation: ev-popover-in $popover-speed $ease-out-expo forwards;
 }
 
-.zoomImage.active img {
-  transform: scale(1);
+@keyframes ev-popover-in {
+  from {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.contact-card {
+  overflow: visible !important;
+  position: relative;
+  z-index: 10;
+  transition: box-shadow 0.5s ease;
+  &:hover {
+    box-shadow:
+      0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
 }

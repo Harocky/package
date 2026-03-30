@@ -6,6 +6,7 @@ import EvCheckbox from "../../components/ui/EvCheckbox";
 import EvDropdown from "../../components/ui/EvDropdown";
 import EvSubmitButton from "../../components/ui/EvSubmitButton";
 import { useToast } from "@/app/components/ui/EvToast";
+import EvTextarea from "@/app/components/ui/EvTextArea";
 
 export default function ContactPage() {
   const { showToast } = useToast();
@@ -92,7 +93,7 @@ export default function ContactPage() {
 
   return (
     <main className="min-h-screen ev-bg-soft ev-flex ev-items-center ev-justify-center ev-pad-md">
-      <div className="ev-flex ev-flex-col ev-gap-lg ev-pad-lg w-full max-w-xl border border-gray-100">
+      <div className="ev-flex ev-flex-col ev-gap-lg ev-pad-lg w-full max-w-xl border border-gray-100 ev-rounded-md">
         <EvInput
           label="Name"
           placeholder="Enter your name"
@@ -115,7 +116,7 @@ export default function ContactPage() {
           }}
         />
 
-        <EvInput
+        <EvTextarea
           label="Message"
           placeholder="Enter your message"
           value={message}
