@@ -236,7 +236,7 @@ const UnifiedMarsEVPage = () => {
 
       <section
         id="contact-section"
-        className="ev-pad-y-xl ev-pad-x-md min-h-screen ev-flex items-center justify-center bg-white scroll-section"
+        className="ev-pad-xl ev-mar-xl ev-pad-x-md ev-flex items-center justify-center bg-white scroll-section"
       >
         <div
           className="ev-flex ev-flex-col ev-gap-lg ev-pad-lg ev-bg-white ev-rounded-xl contact-card xl:max-w-[80%] ev-border w-full shadow-sm"
