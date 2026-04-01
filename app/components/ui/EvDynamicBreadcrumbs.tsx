@@ -8,7 +8,11 @@ export default function EvDynamicBreadcrumbs() {
 
   if (pathname === "/") return null;
 
-  const segments = pathname.split("/").filter((s) => s && s !== "app");
+  const IGNORE_SEGMENTS = ["app", "api", "admin"];
+
+  const segments = pathname
+    .split("/")
+    .filter((s) => s && !IGNORE_SEGMENTS.includes(s));
 
   const crumbs = segments.map((segment, index) => {
     const href = "/" + segments.slice(0, index + 1).join("/");

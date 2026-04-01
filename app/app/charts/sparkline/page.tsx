@@ -3,7 +3,6 @@
 import React, { useMemo } from "react";
 import Sparkline, { SparkPoint } from "@/app/components/charts/Sparkline";
 
-// HOLDER 1: Static Raw Data (Simulated API)
 const RAW_SPARK_DATA: SparkPoint[] = [
   { date: "1", sales: 120, users: 80 },
   { date: "2", sales: 150, users: 95 },
@@ -15,10 +14,7 @@ const RAW_SPARK_DATA: SparkPoint[] = [
 ];
 
 export default function DashboardPage() {
-  // HOLDER 2: Memoized Data (ready for API hook integration)
-  const sparkData = useMemo(() => {
-    return RAW_SPARK_DATA;
-  }, []);
+  const sparkData = useMemo(() => RAW_SPARK_DATA, []);
 
   return (
     <main className="ev-bg-main min-h-screen ev-pad-lg ev-flex ev-flex-col ev-items-center">
@@ -27,16 +23,17 @@ export default function DashboardPage() {
           Real-time Pulse
         </h2>
 
-        {/* Card containing Sparkline + Custom Dropdown */}
         <div className="ev-pad-md ev-bg-alt ev-rounded-lg ev-border ev-shadow-sm ev-flex ev-justify-between ev-items-center">
           <div className="ev-flex ev-flex-col">
             <span className="ev-text-sm text-slate-400 font-bold uppercase">
               Growth Trend
             </span>
-            <span className="ev-text-xl font-bold text-slate-900">+18.4%</span>
+            <span className="ev-text-xl font-bold text-slate-900">
+              +18.4%
+            </span>
           </div>
 
-          <Sparkline data={sparkData} />
+          <Sparkline data={sparkData} metric="sales" />
         </div>
       </div>
     </main>

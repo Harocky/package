@@ -115,7 +115,7 @@ export default function PieChart({ data }: { data: PieData[] }) {
   if (!data.length) return <div className="ev-pad-md">No data...</div>;
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full max-w-2xl">
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       <div className="ev-flex ev-justify-between ev-items-center ev-mar-b-md">
         <h3 className="ev-text-lg font-bold">Market Share</h3>
         <button

@@ -54,7 +54,7 @@ export default function ParetoChart({ data }: { data: ParetoData[] }) {
   }, [processedData, cW, cH, padding]);
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full max-w-5xl">
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       <div className="ev-flex ev-justify-between ev-items-center ev-mar-b-md">
         <div className="ev-flex ev-flex-col">
           <span className="ev-text-sm font-bold text-slate-400 uppercase tracking-widest">

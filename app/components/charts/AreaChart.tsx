@@ -105,7 +105,7 @@ export default function AreaChart({ data }: { data: DataPoint[] }) {
     );
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full">
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       <div className="ev-flex ev-flex-wrap ev-justify-between ev-items-center ev-mar-y-md ev-gap-md">
         <div className="ev-flex ev-gap-sm">
           {(Object.keys(CAT_CONFIG) as Category[]).map((c) => (

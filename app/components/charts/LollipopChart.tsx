@@ -56,7 +56,7 @@ export default function LollipopChart({ data }: { data: LollipopData[] }) {
     return <div className="ev-pad-md">No data available...</div>;
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full">
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       <div className="ev-flex ev-justify-between ev-items-center ev-mar-y-md">
         <div className="ev-flex ev-flex-col">
           <span className="ev-text-sm font-bold text-slate-400 uppercase tracking-widest">

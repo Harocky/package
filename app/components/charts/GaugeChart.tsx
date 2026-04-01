@@ -41,7 +41,7 @@ export default function GaugeChart({ metrics }: { metrics: GaugeMetric[] }) {
   }, [active]);
 
   return (
-    <div className="ev-bg-main ev-rounded-2xl ev-shadow-lg ev-border ev-rounded-xl border-gray-100 ev-pad-lg w-full max-w-md transition-all duration-500 hover:shadow-xl">
+    <div className="ev-bg-main ev-rounded-2xl ev-shadow-lg ev-border ev-rounded-xl border-gray-100 ev-pad-lg w-full h-full transition-all duration-500 hover:shadow-xl">
       <div className="ev-flex ev-justify-between ev-items-start ev-mar-b-xl ev-gap-md relative z-50">
         <div className="flex-1">
           <h3 className="text-[17px] font-bold text-gray-900 tracking-tight">

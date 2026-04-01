@@ -247,7 +247,7 @@ export default function EvTable<T extends Record<string, unknown>>({
     }
 
     return processedData;
-  }, [data, columns, sortConfig, filters]);
+  }, [data, sortConfig, filters]);
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -305,14 +305,14 @@ export default function EvTable<T extends Record<string, unknown>>({
   ];
 
   return (
-    <div className="w-full ev-bg-main rounded-2xl shadow-sm border border-gray-100 overflow-hidden ev-flex ev-flex-col">
+    <div className="w-full max-h-screen ev-bg-main rounded-2xl shadow-sm border border-gray-100 overflow-hidden ev-flex ev-flex-col">
       {activeResizer && (
         <div className="fixed inset-0 z-50 cursor-col-resize select-none" />
       )}
 
       <div className="ev-pad-md border-b border-gray-100 ev-bg-alt">
         <div className="ev-flex ev-items-center ev-justify-between ev-mar-b-sm">
-          <h3 className="text-gray-900 font-bold text-lg">Dynamic Data Grid</h3>
+          <h3 className="text-gray-900 font-bold text-lg">Data Grid</h3>
           <button
             onClick={addFilter}
             className="bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 ev-pad-x-sm ev-pad-y-xs rounded-md text-sm font-bold transition-colors"
@@ -328,39 +328,35 @@ export default function EvTable<T extends Record<string, unknown>>({
                 key={filter.id}
                 className="ev-flex ev-flex-wrap ev-items-center ev-gap-xs bg-white ev-pad-xs rounded-md border border-gray-200 w-fit"
               >
-                <div className="w-48">
-                  <EvTableDropdown
-                    open={isDropdownOpen(filter.id, "column")}
-                    options={columnOptions}
-                    selected={filter.column}
-                    onToggle={() => toggleDropdown(filter.id, "column")}
-                    onClose={() =>
-                      setOpenDropdowns((prev) => ({
-                        ...prev,
-                        [`${filter.id}-column`]: "closed",
-                      }))
-                    }
-                    onSelect={(val) => updateFilter(filter.id, "column", val)}
-                    placeholder="Select Column"
-                  />
-                </div>
+                <EvTableDropdown
+                  open={isDropdownOpen(filter.id, "column")}
+                  options={columnOptions}
+                  selected={filter.column}
+                  onToggle={() => toggleDropdown(filter.id, "column")}
+                  onClose={() =>
+                    setOpenDropdowns((prev) => ({
+                      ...prev,
+                      [`${filter.id}-column`]: "closed",
+                    }))
+                  }
+                  onSelect={(val) => updateFilter(filter.id, "column", val)}
+                  placeholder="Select Column"
+                />
 
-                <div className="w-40 border-l border-gray-200 ev-pad-l-xs">
-                  <EvTableDropdown
-                    open={isDropdownOpen(filter.id, "operator")}
-                    options={operatorOptions}
-                    selected={filter.operator}
-                    onToggle={() => toggleDropdown(filter.id, "operator")}
-                    onClose={() =>
-                      setOpenDropdowns((prev) => ({
-                        ...prev,
-                        [`${filter.id}-operator`]: "closed",
-                      }))
-                    }
-                    onSelect={(val) => updateFilter(filter.id, "operator", val)}
-                    placeholder="Operator"
-                  />
-                </div>
+                <EvTableDropdown
+                  open={isDropdownOpen(filter.id, "operator")}
+                  options={operatorOptions}
+                  selected={filter.operator}
+                  onToggle={() => toggleDropdown(filter.id, "operator")}
+                  onClose={() =>
+                    setOpenDropdowns((prev) => ({
+                      ...prev,
+                      [`${filter.id}-operator`]: "closed",
+                    }))
+                  }
+                  onSelect={(val) => updateFilter(filter.id, "operator", val)}
+                  placeholder="Operator"
+                />
 
                 <div className="ev-search-container border-l border-gray-200 ev-pad-l-xs flex-1">
                   <input
@@ -453,7 +449,7 @@ export default function EvTable<T extends Record<string, unknown>>({
                     onMouseDown={(e) =>
                       handleColMouseDown(e, col.key as string)
                     }
-                    className="absolute top-0 right-0 bottom-0 w-2 cursor-col-resize bg-transparent group-hover:bg-indigo-500/20 hover:!bg-indigo-500 z-30"
+                    className="absolute top-0 right-0 bottom-0 w-2 cursor-col-resize group-hover:bg-indigo-500/20 hover:!bg-indigo-500 z-30"
                     style={{ right: "-1px" }}
                   />
                 </th>
@@ -472,7 +468,7 @@ export default function EvTable<T extends Record<string, unknown>>({
                     key={col.key as string}
                     className="ev-pad-md text-sm text-gray-700 border-r border-gray-100 last:border-r-0 relative overflow-hidden"
                   >
-                    <div className="ev-flex ev-items-center w-full overflow-hidden truncate">
+                    <div className="ev-flex ev-items-center w-full overflow-hidden truncate capitalize">
                       {row[col.key] as React.ReactNode}
                     </div>
                   </td>

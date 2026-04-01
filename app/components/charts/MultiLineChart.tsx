@@ -100,8 +100,7 @@ export default function MultiLineChart({ data }: ChartProps) {
   };
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full">
-      {/* Legend / Toggle Section */}
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       <div className="ev-flex ev-flex-wrap ev-justify-between ev-items-center ev-mar-y-md ev-gap-md">
         <div className="ev-flex ev-gap-sm">
           {(Object.keys(METRIC_CONFIG) as Metric[]).map((m) => (

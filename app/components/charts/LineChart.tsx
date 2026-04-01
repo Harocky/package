@@ -71,7 +71,7 @@ export default function LineChart({ data }: ChartProps) {
   })();
 
   return (
-    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full">
+    <div className="ev-bg-main ev-rounded-lg ev-shadow-md ev-border ev-pad-md w-full h-full">
       {/* Filters Header */}
       <div className="ev-flex ev-justify-between ev-items-center ev-mar-y-md">
         <h3 className="ev-text-md font-bold text-slate-700 uppercase tracking-tight">

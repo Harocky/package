@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
-import EvDropdown from "@/app/components/ui/EvDropdown";
+import { useState, useMemo } from "react";
 
 export type SparkPoint = {
   date: string;
@@ -16,23 +15,19 @@ const SPARK_COLORS: Record<Metric, string> = {
   users: "#10b981",
 };
 
-export default function Sparkline({ data }: { data: SparkPoint[] }) {
-  const [metric, setMetric] = useState<Metric>("sales");
+export default function Sparkline({
+  data,
+  metric,
+}: {
+  data: SparkPoint[];
+  metric: Metric;
+}) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Constants for fixed small size
   const width = 140;
   const height = 40;
   const padding = 4;
 
-  // Dropdown Options
-  const metricOptions = [
-    { label: "Sales", value: "sales" },
-    { label: "Users", value: "users" },
-  ];
-
-  // 1. Hooks must be at the top level
   const points = useMemo(() => {
     if (!data || data.length === 0) return [];
 
@@ -56,12 +51,10 @@ export default function Sparkline({ data }: { data: SparkPoint[] }) {
       .join(" ");
   }, [points]);
 
-  // 2. Conditional Return after hooks
   if (!data || data.length === 0) return null;
 
   return (
     <div className="ev-flex ev-items-center ev-gap-md">
-      {/* Small UI Sparkline */}
       <div className="relative group">
         <svg width={width} height={height} className="overflow-visible">
           <path
@@ -108,19 +101,6 @@ export default function Sparkline({ data }: { data: SparkPoint[] }) {
             {points[hoveredIndex].val}
           </div>
         )}
-      </div>
-
-      {/* Your Custom Dropdown */}
-      <div className="w-[120px]">
-        <EvDropdown
-          open={isDropdownOpen}
-          options={metricOptions}
-          selected={metric}
-          placeholder="Metric"
-          onToggle={() => setIsDropdownOpen(!isDropdownOpen)}
-          onClose={() => setIsDropdownOpen(false)}
-          onSelect={(val) => setMetric(val as Metric)}
-        />
       </div>
     </div>
   );
